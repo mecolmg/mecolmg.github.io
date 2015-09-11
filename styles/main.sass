@@ -1,8 +1,28 @@
+// Colors:
+$red: #f64649
+
+// Main HTML Items:
 html,body
 	width: 100%
 	height: 100%
+	margin: 0
 body
-	background-image: 'images/background.jpg'
+	background-image: url('../images/background.jpg')
 	background-attachment: fixed
 	background-position: absolute
 	background-size: cover
+section
+	width: 100%
+	margin: 0
+	padding: 25px
+// ID's:
+#header
+	background: transparent
+	height: 100%
+#about
+	background: $red
+	height: 400px
+
+// Bootstrap Modifiers:
+.navbar-fixed-top
+	color: $red	
