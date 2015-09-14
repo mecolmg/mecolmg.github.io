@@ -8,13 +8,19 @@ html,body
 	margin: 0
 body
 	background-image: url('../images/background.jpg')
-	background-attachment: fixed
-	background-position: absolute
+	background-position: 50% 50% !important
 	background-size: cover
+	font-family: 'Oswald', sans-serif !important
+a
+	&:hover, &:active
+		text-decoration: none !important
+		color: $red !important
+	
 section
 	width: 100%
 	margin: 0
 	padding: 25px
+
 // ID's:
 #header
 	background: transparent
@@ -23,6 +29,32 @@ section
 	background: $red
 	height: 400px
 
+// Classes:
+.nav-brand
+	margin: 10px !important
+	height: 30px
+	a
+		color: white
+		font-size: 30px
+		line-height: 100%
+		&:hover, &:active
+			color: $red
+
 // Bootstrap Modifiers:
-.navbar-fixed-top
-	color: $red	
+.navbar-custom
+	color: white !important
+	padding: 0 !important
+	margin: 0 !important
+	background-color: rgba(#000, 0.9)
+	border-top: 3px solid $red !important
+	.nav
+		// float: right
+		li
+			margin: 0 5px
+		.active, li:hover
+			a
+				background-color: $red
+		li > a
+			font-size: 17px
+			color: white !important
+
